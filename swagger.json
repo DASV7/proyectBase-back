@@ -1,0 +1,10 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "swagger Documentation proyectBase",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "paths": {},
+  "definitions": {}
+}
