@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const swaggerUi = require('swagger-ui-express');
 const swaggerJSDoc = require('swagger-jsdoc');
 const routes = require("./src/routes")
-
+const connectDbMongo = require("./src/services/db/dbConnection.js")
 
 
 // Configuration
@@ -20,6 +20,8 @@ app.use(cors(config.cors))
 //parse informationMongo
 app.use(bodyParser.json())
 
+//db Conection
+connectDbMongo()
 
 //swagger Implementation
 const swaggerSpec = swaggerJSDoc(optionsSwagger);
