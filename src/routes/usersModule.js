@@ -1,10 +1,10 @@
 const { Router } = require('express');
 const route = Router();
-const { getUsersById } = require("../lib/usersModule/usersModule.controller")
+const { getUsersById, createNewUser } = require("../lib/usersModule/usersModule.controller")
 
 module.exports = (app) => {
     //define Route users
-    app.use("/usersModule", route)
+    app.use("/usersmodule", route)
 
     /**
      * * @swagger
@@ -20,4 +20,20 @@ module.exports = (app) => {
      * Params: query options
     */
     route.get('/', getUsersById);
+
+
+    /**
+    * * @swagger
+    * /api/v1/usersModule:
+    *  post:
+    *   description: create  users
+    *  responses:
+    *  200:
+    *  description: Usuario creado  Correctamente
+    * 500:
+    * description: Ocurrio un error inesperado
+    * 
+    * Params: query options
+   */
+    route.post('/', createNewUser);
 }
