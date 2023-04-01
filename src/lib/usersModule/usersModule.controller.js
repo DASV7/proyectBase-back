@@ -12,6 +12,7 @@ users.getUsersById = async (req, res) => {
 
 users.createNewUser = async (req, res) => {
     try {
+        console.log("entra"); 
         /* Como crearlo 
         const user = req.body
         const users = new modelUsers({
