@@ -3,7 +3,7 @@ const route = Router();
 const {
   createNewCompany,
   editCompany,
-} = require("../lib/companies/companiesModule");
+} = require("../lib/companies/companiesController");
 
 module.exports = (app) => {
   //define Route users
