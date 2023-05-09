@@ -5,12 +5,11 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerJSDoc = require('swagger-jsdoc');
 const routes = require("./src/routes")
 const connectDbMongo = require("./src/services/db/dbConnection.js")
-
-
-// Configuration
 const config = require('./src/config/index')
-require('dotenv').config();
 const optionsSwagger = require('./src/loaders/swagger')
+
+
+require('dotenv').config();
 
 const app = express()
 
