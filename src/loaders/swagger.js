@@ -22,6 +22,10 @@ module.exports = {
         name: "Autenticación",
         description: "Operaciones relacionadas con autenticación",
       },
+      {
+        name: "Products",
+        description: "Operaciones relacionadas los productos",
+      },
     ],
     servers: [
       {
